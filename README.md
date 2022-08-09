@@ -1,5 +1,5 @@
 # Sparclet
-Using Leaflet to interact with flatmaps in a Jupyter notebook. Taking SPARCS mapping to a further platform.
+A python library to generate and interact with flatmaps in a jupyter notebook using the ipyleaflet library. 
 
 
 ## Project Goals
