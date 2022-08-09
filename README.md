@@ -67,6 +67,9 @@ leaflet_addons wraps the interactive features added by ipyleaflet, which can be 
     update_html: updates the widget at bottom right with label of the current object being hovered on
    
 ### CustomWTKLayer class
+
+A custom version of WKTLayer in ipyleaflet, used for hover.
+
     _get_data1: stores annotaion data in self.data
    
 ## Sparclet python package
