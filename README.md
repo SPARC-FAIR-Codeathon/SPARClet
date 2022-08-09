@@ -61,7 +61,7 @@ Archit Bhatnagar
 Chloe Hoff
 -Undergrad at the University of Vermont
 
-Koustubh Sudarshan
--Dalhousie University in Canada.
+Koustubh Sudarshan (PhD. Candidate)
+-Dalhousie University, Canada & UCLA Cardiac Arrhythmia Center, USA .
   
 
