@@ -1,5 +1,5 @@
 # Sparclet
-Using Leaflet to interact with flatmaps in a Jupyter notebook. Taking Sparcs mapping to a further platform.
+Using Leaflet to interact with flatmaps in a Jupyter notebook. Taking SPARCS mapping to a further platform.
 
 
 ## Project Goals
@@ -26,6 +26,14 @@ Listed below are functions that can be called in regard to their class
     _get_data1: stores annotaion data in self.data
     
 ### Build_map class
+    __init__: this is the function that calls the class itself. the parameters it takes in are the server url and the tag. The tag is the index in the list of image layers in the server, to determine the tag, you will have to use a GET request like below
+    
+     req = requests.get(server_url)
+     url_dict = req.json()
+     print(url_dict)
+     
+      then see where the desired flatmap falls in the dictionary
+    
     get_url_dict: retrieves the Accept header, giving details on max zoom, min zoom, and bounds
     
     get_model_id: retrieves the unique id attached to the flatmap, used in the url
@@ -34,7 +42,7 @@ Listed below are functions that can be called in regard to their class
     
     get_model_layer_url: creates the url that is linked to the location of the layer in the server
     
-    get_model_image_layer: retrieves images that make up the flatmap
+    get_model_image_layer: retrieves image that make up the flatmap
     
     get_tile_urls: creates and returns tile urls that make up the map used in ipyleaflet
     
@@ -50,8 +58,8 @@ Listed below are functions that can be called in regard to their class
    hover: allows the user to hover over the flatmap and get real time feedback
    
    update_html: updates the widget at bottom right with label of the current object being hovered on
-
-
+   
+ 
 
 ## Team Members
 
