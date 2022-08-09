@@ -61,7 +61,9 @@ Listed below are functions that can be called in regard to their class
    
     update_html: updates the widget at bottom right with label of the current object being hovered on
    
- 
+## Sparclet python package
+We welcome open source contributions to our library. There a many more functionalities that can be added to the flatmaps and we were restricted by the duration of the codeathon. We will be maintaining this library and making it more beneficial to the SPARC community. 
+
 ## Team Members
 
 Archit Bhatnagar
@@ -70,7 +72,7 @@ Archit Bhatnagar
 Chloe Hoff
 -Undergrad at the University of Vermont
 
-Koustubh Sudarshan (PhD. Candidate)
+Koustubh Sudarshan
 -Dalhousie University, Canada & UCLA Cardiac Arrhythmia Center, USA .
   
 
