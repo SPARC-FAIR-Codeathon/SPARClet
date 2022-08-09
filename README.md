@@ -16,7 +16,7 @@ We created Sparclet, a pypi application that allows flatmaps to be viewed in (Ju
 2. Apply annotations from metadata to flatmap i.e anatomical nomenclature
 3. The ability to hover over map and get real time feedback
 4. Markers on flatmap for defined anatomy
-5. The ability to annotate on the map, or add polygons, lines, or text
+5. The ability to annotate the map by adding polygons, lines, or text
 
 ## Functions
 
