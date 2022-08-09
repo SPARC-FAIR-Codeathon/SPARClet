@@ -58,6 +58,8 @@ Build_map class wraps the access to flatmap server and consequent construction o
     
 ### leaflet_addons class
    
+leaflet_addons wraps the interactive features added by ipyleaflet, which can be extended by extending this class. Users can select which interactive features they want to have on the current flatmap.
+   
     add_markers: adds markers to the location of the annotation feature
    
     hover: allows the user to hover over the flatmap and get real time feedback
