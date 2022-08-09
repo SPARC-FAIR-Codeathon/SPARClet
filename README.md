@@ -24,11 +24,11 @@ We created Sparclet, a pypi application that allows flatmaps to be viewed in (Ju
 ## Functions
 
 Listed below are functions that can be called in regard to their class
-
-### CustomWTKLayer class
-    _get_data1: stores annotaion data in self.data
     
 ### Build_map class
+
+This class wraps access to the flatmap server and the consequent construction of the ipyLeaflet map object. It asks the server for the set of flatmaps available on that server. The user can currently select which map to use via a numerical index or tag. In the future we plan to make this selection more human-friendly.
+
     __init__: this is the function that calls the class itself. the parameters it takes in are the server url and the tag. The tag is the index in the list of image layers in the server. To determine the tag you will have to use a GET request like below
     
      import requests
@@ -57,12 +57,20 @@ Listed below are functions that can be called in regard to their class
     build_map_without_markers: creates the general flatmap with out feature markers
     
 ### leaflet_addons class
+
+This class wraps the interactive features added to the flatmap, allowing users to select which interactive features they want to use on the current flatmap. Newer interactive features can be added by extending this class.
    
     add_markers: adds markers to the location of the annotation feature
    
     hover: allows the user to hover over the flatmap and get real time feedback
    
     update_html: updates the widget at bottom right with label of the current object being hovered on
+    
+### CustomWTKLayer class
+
+This class is a custom version of the WKTLayer class in ipyleaflet, used to pass the annotations in the flatmap to the html widget.
+
+    _get_data1: stores annotaion data in self.data
    
 ## Sparclet python package
 We welcome open source contributions to our library. There a many more functionalities that can be added to the flatmaps and we were restricted by the duration of the codeathon. We will be maintaining this library and making it more beneficial to the SPARC community. 
