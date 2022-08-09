@@ -12,23 +12,22 @@ SPARC has a large repository of datasets and interactive exploration applicaions
 
 ## Solution
 
-We created Sparclet, a pypi application that allows flatmaps to be viewed in (Jupyter Notebook)[https://jupyter.org/] and be interacted in nivel ways using the (ipyleaflet library)[https://github.com/jupyter-widgets/ipyleaflet] to help facilitate an individualized research process. The functions we created are:
-1. Viewing two maps side by side in a split map. there are different approaches:
-   - a chosen SPARC flatmap compared to another chosen SPARC flatmap
-   - a chosen image or flatmap from an outside source compared with a SPARC flatmap
-2. Apply annotations from metadata to flatmap i.e anatomical nomenclature
-3. The ability to hover over map and get real time feedback
-4. Markers on flatmap for defined anatomy
-5. The ability to annotate the map by adding polygons, lines, or text
+We created Sparclet, a pypi application that allows flatmaps to be viewed in (Jupyter Notebook)[https://jupyter.org/] and be interacted in nivel ways using the (ipyleaflet library)[https://github.com/jupyter-widgets/ipyleaflet] to help facilitate an individualized research process. We went about this using the following solutions.
+1. Simplified the process of retrieving flatmaps from their APIs by building a python routine that requires a user to only provide the model number of a species or a model to generate the maps locally. 
+2. Added functions pertaining to adding markers and annotations that could be stored as study-specific file on a server.  
+3. Added multiple functionalities such as layer control, hovering annotations, custom drawing tools, heatmaps and antpaths for interacting with the flatmaps
+4. We also attempted to provide additonal fucntionalities such as comparing cross species maps with a splitmap feature with respect to specific anatomical regions. A search bar that could be used for navigating annotations and obtain methods used in relevant studies. 
+5. Created a new open source python library that coule be used by the SPARC community in the future. The additional fucntionalities mentioned above will be the subjects of open source contributions to our library.
+
 
 ## Functions
 
 Listed below are functions that can be called in regard to their class
+
+### CustomWTKLayer class
+    _get_data1: stores annotaion data in self.data
     
 ### Build_map class
-
-This class wraps access to the flatmap server and the consequent construction of the ipyLeaflet map object. It asks the server for the set of flatmaps available on that server. The user can currently select which map to use via a numerical index or tag. In the future we plan to make this selection more human-friendly.
-
     __init__: this is the function that calls the class itself. the parameters it takes in are the server url and the tag. The tag is the index in the list of image layers in the server. To determine the tag you will have to use a GET request like below
     
      import requests
@@ -57,20 +56,12 @@ This class wraps access to the flatmap server and the consequent construction of
     build_map_without_markers: creates the general flatmap with out feature markers
     
 ### leaflet_addons class
-
-This class wraps the interactive features added to the flatmap, allowing users to select which interactive features they want to use on the current flatmap. Newer interactive features can be added by extending this class.
    
     add_markers: adds markers to the location of the annotation feature
    
     hover: allows the user to hover over the flatmap and get real time feedback
    
     update_html: updates the widget at bottom right with label of the current object being hovered on
-    
-### CustomWTKLayer class
-
-This class is a custom version of the WKTLayer class in ipyleaflet, used to pass the annotations in the flatmap to the html widget.
-
-    _get_data1: stores annotaion data in self.data
    
 ## Sparclet python package
 We welcome open source contributions to our library. There a many more functionalities that can be added to the flatmaps and we were restricted by the duration of the codeathon. We will be maintaining this library and making it more beneficial to the SPARC community. 
