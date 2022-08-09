@@ -7,7 +7,8 @@ A python library to generate and interact with flatmaps in a jupyter notebook us
 
 ## Project Goals
 
-SPARC has a large repository of datasets and interactive exploration applicaions like the SPARC flatmaps built into their portal. Although, the maps present high resolution intricate anatomical models across species, they are limited by static maps and corresponding literature & dataset retrieveal. In the codeathon, we aimed to add additional fucntionalities and further interactions with these maps. These additonal fucntionalities could help a researcher agument the research process and help in developing a deeper understanding of theor field of study. We added techniques to view the flatmaps in a jupyter notebook along with added widgets using the ipyleaflet library. We achieved this by building a new python library called Sparclet to aid us in this project. 
+SPARC has created detailed maps of the PNS, stored as flatmaps. However, the current interactivity possible with these flatmaps is basic and non-extensible. 
+We use here Leaflet, a popular javascript library for adding interactive features to geographical maps to display and intergrate flatmaps in Jupyter notebooks, popular for their use in scientific data analysis and computing. Using this, we hope to allow researchers much greater and extensible interactivity with SPARC flatmaps in an easy to use manner. These additonal fucntionalities could help a researcher agument the research process and help in developing a deeper understanding of theor field of study. To allow for easier use by other, we also built a new python library called Sparclet. 
 
 
 ## Solution
@@ -23,11 +24,11 @@ We created Sparclet, a pypi application that allows flatmaps to be viewed in (Ju
 ## Functions
 
 Listed below are functions that can be called in regard to their class
-
-### CustomWTKLayer class
-    _get_data1: stores annotaion data in self.data
     
 ### Build_map class
+
+Build_map class wraps the access to flatmap server and consequent construction of ipyleaflet map object. It asks the server for the set of flatmaps it currently has access to, from which the user can select one using a numerical tag. In the future, we hope to provide a more human-friendly access to individual maps.
+
     __init__: this is the function that calls the class itself. the parameters it takes in are the server url and the tag. The tag is the index in the list of image layers in the server. To determine the tag you will have to use a GET request like below
     
      import requests
@@ -62,6 +63,9 @@ Listed below are functions that can be called in regard to their class
     hover: allows the user to hover over the flatmap and get real time feedback
    
     update_html: updates the widget at bottom right with label of the current object being hovered on
+   
+### CustomWTKLayer class
+    _get_data1: stores annotaion data in self.data
    
 ## Sparclet python package
 We welcome open source contributions to our library. There a many more functionalities that can be added to the flatmaps and we were restricted by the duration of the codeathon. We will be maintaining this library and making it more beneficial to the SPARC community. 
