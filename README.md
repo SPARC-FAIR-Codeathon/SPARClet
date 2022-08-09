@@ -7,7 +7,7 @@ A python library to generate and interact with flatmaps in a jupyter notebook us
 
 ## Project Goals
 
-SPARC has a large data library with many flatmaps built off of data in their database. They have great detail,but there are limited action for the maps. We believed it would benefit a researcher if they could interact with the map. Leaflet is a software that uses javascript to interact with maps. TIOBE (The Importance Of Being Earnest) reports python is the most popular language. We thought using jupyter notebooks with python would be more accessible to researchers. We then found ipyleaflet, a python package that mimics leaflet.
+SPARC has a large repository of datasets and interactive exploration applicaions like the SPARC flatmaps built into their portal. Although, the maps present high resolution intricate anatomical models across species, they are limited by static maps and corresponding literature & dataset retrieveal. In the codeathon, we aimed to add additional fucntionalities and further interactions with these maps. These additonal fucntionalities could help a researcher agument the research process and help in developing a deeper understanding of theor field of study. We added techniques to view the flatmaps in a jupyter notebook along with added widgets using the ipyleaflet library. We achieved this by building a new python library called Sparclet to aid us in this project. 
 
 
 ## Solution
