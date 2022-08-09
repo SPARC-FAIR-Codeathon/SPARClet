@@ -26,13 +26,14 @@ Listed below are functions that can be called in regard to their class
     _get_data1: stores annotaion data in self.data
     
 ### Build_map class
-    __init__: this is the function that calls the class itself. the parameters it takes in are the server url and the tag. The tag is the index in the list of image layers in the server, to determine the tag, you will have to use a GET request like below
+    __init__: this is the function that calls the class itself. the parameters it takes in are the server url and the tag. The tag is the index in the list of image layers in the server. To determine the tag you will have to use a GET request like below
     
+     import requests
      req = requests.get(server_url)
      url_dict = req.json()
      print(url_dict)
      
-      then see where the desired flatmap falls in the dictionary
+      then see where the desired flatmap falls in the dictionary, the index is the tag (remeber index starts at 0)
     
     get_url_dict: retrieves the Accept header, giving details on max zoom, min zoom, and bounds
     
@@ -53,14 +54,14 @@ Listed below are functions that can be called in regard to their class
     build_map_without_markers: creates the general flatmap with out feature markers
     
 ### leaflet_addons class
-   add_markers: adds markers to the location of the annotation feature
    
-   hover: allows the user to hover over the flatmap and get real time feedback
+    add_markers: adds markers to the location of the annotation feature
    
-   update_html: updates the widget at bottom right with label of the current object being hovered on
+    hover: allows the user to hover over the flatmap and get real time feedback
+   
+    update_html: updates the widget at bottom right with label of the current object being hovered on
    
  
-
 ## Team Members
 
 Archit Bhatnagar
