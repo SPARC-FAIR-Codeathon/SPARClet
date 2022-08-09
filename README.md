@@ -49,7 +49,7 @@ Listed below are functions that can be called in regard to their class
    
    hover: allows the user to hover over the flatmap and get real time feedback
    
-   update_html: 
+   update_html: updates the widget at bottom right with label of the current object being hovered on
 
 
 
