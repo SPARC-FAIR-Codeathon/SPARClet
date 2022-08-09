@@ -1,6 +1,9 @@
 # Sparclet
 A python library to generate and interact with flatmaps in a jupyter notebook using the ipyleaflet library. 
 
+![alt text](https://github.com/SPARC-FAIR-Codeathon/Sparclet/blob/main/LeafLet%20AddOn%20Tutorial/Landing_page.png)
+
+
 
 ## Project Goals
 
