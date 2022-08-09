@@ -12,7 +12,7 @@ SPARC has a large repository of datasets and interactive exploration applicaions
 
 ## Solution
 
-We created Sparclet, a pypi application that allows flatmaps to be viewed in (Jupyter Notebook)[https://jupyter.org/] and be used in new and different ways using (leaflet software)[https://leafletjs.com/index.html] to further understand the information shown in the flatmaps. The functions we created are:
+We created Sparclet, a pypi application that allows flatmaps to be viewed in (Jupyter Notebook)[https://jupyter.org/] and be interacted in nivel ways using the (ipyleaflet library)[https://github.com/jupyter-widgets/ipyleaflet] to help facilitate an individualized research process. The functions we created are:
 1. Viewing two maps side by side in a split map. there are different approaches:
    - a chosen SPARC flatmap compared to another chosen SPARC flatmap
    - a chosen image or flatmap from an outside source compared with a SPARC flatmap
