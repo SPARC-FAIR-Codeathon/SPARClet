@@ -8,12 +8,12 @@ A python library to generate and interact with flatmaps in a jupyter notebook us
 ## Project Goals
 
 SPARC has created detailed maps of the PNS, stored as flatmaps. However, the current interactivity possible with these flatmaps is basic and non-extensible. 
-We use here Leaflet, a popular javascript library for adding interactive features to geographical maps to display and intergrate flatmaps in Jupyter notebooks, popular for their use in scientific data analysis and computing. Using this, we hope to allow researchers much greater and extensible interactivity with SPARC flatmaps in an easy to use manner. These additonal fucntionalities could help a researcher agument the research process and help in developing a deeper understanding of theor field of study. To allow for easier use by other, we also built a new python library called Sparclet. 
+We use here ipyleaflet, a popular javascript library for adding interactive features to geographical maps to display and intergrate flatmaps in Jupyter notebooks, popular for their use in scientific data analysis and computing. Using this, we hope to allow researchers much greater and extensible interactivity with SPARC flatmaps in an easy to use manner. These additonal fucntionalities could help a researcher agument the research process and help in developing a deeper understanding of theor field of study. To allow for easier use by other, we also built a new python library called Sparclet. 
 
 
 ## Solution
 
-We created Sparclet, a pypi application that allows flatmaps to be viewed in (Jupyter Notebook)[https://jupyter.org/] and be interacted in nivel ways using the (ipyleaflet library)[https://github.com/jupyter-widgets/ipyleaflet] to help facilitate an individualized research process. We went about this using the following solutions.
+We created Sparclet, a pypi application that allows flatmaps to be viewed in [Jupyter Notebook](https://jupyter.org/) and be interacted in novel ways using the [ipyleaflet library](https://github.com/jupyter-widgets/ipyleaflet) to help facilitate an individualized research process. We went about this using the following solutions.
 1. Simplified the process of retrieving flatmaps from their APIs by building a python routine that requires a user to only provide the model number of a species or a model to generate the maps locally. 
 2. Added functions pertaining to adding markers and annotations that could be stored as study-specific file on a server.  
 3. Added multiple functionalities such as layer control, hovering annotations, custom drawing tools, heatmaps and antpaths for interacting with the flatmaps
