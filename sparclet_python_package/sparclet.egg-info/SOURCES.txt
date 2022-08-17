@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+sparclet/__init__.py
+sparclet/__main__.py
+sparclet/helpers.py
+sparclet.egg-info/PKG-INFO
+sparclet.egg-info/SOURCES.txt
+sparclet.egg-info/dependency_links.txt
+sparclet.egg-info/requires.txt
+sparclet.egg-info/top_level.txt

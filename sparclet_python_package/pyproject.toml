@@ -1,0 +1,32 @@
+# pyproject.toml
+
+[build-system]
+requires      = ["setuptools>=61.0.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "sparclet"
+version = "1.0.1"
+description = "A python library to generate and interact with flatmaps in a jupyter notebook using the ipyleaflet library."
+readme = "README.md"
+authors = [{ name = "Archit Bhatnagar", email = "archibhatnagar27@gmail.com" },{ name = "Koustubh Sudarshan", email = "koustubh.sudarshan@gmail.com" },{ name = "Chloe Hoff", email = "chloedhoff@gmail.com" }]
+license = { file = "LICENSE" }
+classifiers = [
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Development Status :: 3 - Alpha",
+    "Framework :: Jupyter",
+    "Intended Audience :: Science/Research",
+    "Natural Language :: English"
+]
+keywords = ["SPARC","flatmap","leaflet"]
+dependencies = [
+    "ipyleaflet",
+    "ipywidgets",
+    "bs4",
+    "requests"
+]
+requires-python = ">=3.5"
+
+[project.urls]
+Homepage = "https://github.com/SPARC-FAIR-Codeathon/SPARClet"
